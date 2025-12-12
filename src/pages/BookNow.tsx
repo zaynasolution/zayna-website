@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { scaleUp } from '../utils/animationVariants'
-import { BookMeta } from './meta'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 
@@ -9,19 +8,13 @@ const BOOK_NOW_IMAGE = '/src/assets/bookNow.jpg'
 export default function BookNow() {
   return (
     <div className="bg-[#FFF0ED] min-h-screen">
-      <BookMeta />
-      
       {/* Hero Section with Image */}
       <section className="relative h-[60vh] w-full overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={BOOK_NOW_IMAGE} 
-            alt="Book Now" 
-            className="w-full h-full object-cover"
-          />
+          <img src={BOOK_NOW_IMAGE} alt="Book Now" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
         </div>
-        
+
         <div className="relative h-full container mx-auto px-4 flex items-center justify-center text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
