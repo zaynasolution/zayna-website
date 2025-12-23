@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 
 export default function GlowingCircles() {
+<<<<<<< HEAD
   // Animation variants
   const circlePulse = {
     initial: { scale: 1, boxShadow: "0 0 10px rgba(255, 215, 0, 0.3)" },
@@ -21,6 +22,8 @@ export default function GlowingCircles() {
     transition: { duration: 2, repeat: Infinity, ease: "linear" }
   }
 
+=======
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   return (
     <div className="w-full flex justify-center items-center py-8 z-20 relative pointer-events-none">
       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-0">

@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom'
 import { useLanguage } from '../../context/LanguageContext'
 
 // Asset imports
+<<<<<<< HEAD
 const LOGO_PATH = '/src/assets/logo-zayna-beauty.png'
+=======
+const LOGO_PATH = '/src/assets/logo.png'
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 
 export default function Footer() {
   const { t, setLang } = useLanguage()

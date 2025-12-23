@@ -113,7 +113,11 @@ export default function TestimonialsSection() {
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={1}
+<<<<<<< HEAD
                 onDragEnd={(_, { offset, velocity }) => {
+=======
+                onDragEnd={(_, { offset }) => {
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                   const swipe = offset.x
                   if (swipe < -50) {
                     nextSlide()

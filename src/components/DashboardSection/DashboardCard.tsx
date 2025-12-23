@@ -35,20 +35,32 @@ export default function DashboardCard({ title, description, bullets, icon, accen
             {icon}
           </div>
           <h3 
+<<<<<<< HEAD
             className="text-2xl font-bold font-serif text-[#2B0902]"
+=======
+            className="text-2xl font-bold font-serif text-text"
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             style={{ textShadow: '0 1px 2px rgba(255,255,255,0.8)' }}
           >
             {title}
           </h3>
         </div>
 
+<<<<<<< HEAD
         <p className="text-[#2B0902]/80 mb-6 font-medium leading-relaxed">
+=======
+        <p className="text-text/80 mb-6 font-medium leading-relaxed">
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
           {description}
         </p>
 
         <ul className="space-y-3">
           {bullets.map((bullet, idx) => (
+<<<<<<< HEAD
             <li key={idx} className="flex items-start gap-3 text-[#2B0902]/70 text-sm">
+=======
+            <li key={idx} className="flex items-start gap-3 text-text/70 text-sm">
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
               <span 
                 className="mt-0.5 min-w-[18px] h-[18px] rounded-full flex items-center justify-center text-white text-[10px]"
                 style={{ backgroundColor: accentColor }}

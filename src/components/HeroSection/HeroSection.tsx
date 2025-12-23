@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Loader2 } from 'lucide-react'
 import { useEffect, useRef, useState, useMemo } from 'react'
 import { useInView } from 'react-intersection-observer'
+=======
+import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion'
+import { ChevronDown, Loader2 } from 'lucide-react'
+import { useEffect, useRef, useState, useMemo } from 'react'
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 import { useLanguage } from '../../context/LanguageContext'
 
 // Asset imports - using relative paths assuming assets are in src/assets
@@ -32,6 +38,7 @@ export default function HeroSection({ onLearnMore, onBookNow }: HeroSectionProps
     offset: ['start start', 'end start'],
   })
 
+<<<<<<< HEAD
   // Intersection observer for lazy loading video
   const { ref: inViewRef, inView } = useInView({
     triggerOnce: true,
@@ -41,6 +48,10 @@ export default function HeroSection({ onLearnMore, onBookNow }: HeroSectionProps
   // Derived scroll values
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.05])
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+=======
+  // Derived scroll values
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.05])
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   const yMove = useTransform(scrollYProgress, [0, 1], [0, -50])
 
   // Video playback speed control
@@ -48,7 +59,11 @@ export default function HeroSection({ onLearnMore, onBookNow }: HeroSectionProps
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.8
     }
+<<<<<<< HEAD
   }, [isVideoLoaded])
+=======
+  }, []) // Remove dependency on isVideoLoaded since we load immediately
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 
   // Scroll detection for block switching
   useEffect(() => {
@@ -112,15 +127,24 @@ export default function HeroSection({ onLearnMore, onBookNow }: HeroSectionProps
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         
         {/* Background Video Layer */}
+<<<<<<< HEAD
         <motion.div 
+=======
+        <m.div 
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
           style={{ scale }}
           className="absolute inset-0 z-0"
         >
           {/* Dark Overlay */}
           <div className="absolute inset-0 z-10 bg-black/20 pointer-events-none" />
           
+<<<<<<< HEAD
           <div ref={inViewRef} className="h-full w-full">
             {inView && !videoError ? (
+=======
+          <div className="h-full w-full">
+            {!videoError ? (
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
               <>
                 {!isVideoLoaded && (
                   <div className="absolute inset-0 flex items-center justify-center bg-[#FFF0ED] z-0">
@@ -135,22 +159,39 @@ export default function HeroSection({ onLearnMore, onBookNow }: HeroSectionProps
                   loop
                   muted
                   playsInline
+<<<<<<< HEAD
+=======
+                  preload="auto"
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                   onLoadedData={() => setIsVideoLoaded(true)}
                   onError={() => setVideoError(true)}
                   aria-hidden="true"
                 />
               </>
+<<<<<<< HEAD
             ) : videoError ? (
+=======
+            ) : (
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
               // Fallback for video error
               <div className="h-full w-full bg-[#FFF0ED] flex items-center justify-center">
                 <span className="text-[#2B0902]/50">Video unavailable</span>
               </div>
+<<<<<<< HEAD
             ) : null}
           </div>
         </motion.div>
 
         {/* Content Layer */}
         <motion.div 
+=======
+            )}
+          </div>
+        </m.div>
+
+        {/* Content Layer */}
+        <m.div 
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
           style={{ y: yMove }}
           className="relative z-20 flex h-full items-center justify-center px-4 sm:px-6 lg:px-8"
         >
@@ -158,12 +199,17 @@ export default function HeroSection({ onLearnMore, onBookNow }: HeroSectionProps
             <AnimatePresence mode="wait">
               {blocks.map((block, index) => (
                 activeBlock === index && (
+<<<<<<< HEAD
                   <motion.div
+=======
+                  <m.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                     key={block.id}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
+<<<<<<< HEAD
                     className="backdrop-blur-md rounded-3xl p-6 md:p-8 shadow-xl text-center md:text-left border border-white/40"
                     style={{ backgroundColor: block.bg }}
                   >
@@ -199,18 +245,56 @@ export default function HeroSection({ onLearnMore, onBookNow }: HeroSectionProps
                       </div>
                     </div>
                   </motion.div>
+=======
+                    className="text-center"
+                  >
+                    <div 
+                      className="p-8 md:p-12 rounded-3xl shadow-xl backdrop-blur-md border border-white/40"
+                      style={{ backgroundColor: block.bg }}
+                    >
+                      <h1 className="text-4xl md:text-6xl font-bold font-serif text-[#2B0902] mb-6 leading-tight drop-shadow-sm">
+                        {block.headline}
+                      </h1>
+                      
+                      <p className="text-lg md:text-xl text-[#2B0902]/90 mb-10 leading-relaxed font-medium">
+                        {block.subtitle}
+                      </p>
+                      
+                      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <m.button
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          onClick={block.action}
+                          className="px-8 py-4 rounded-full text-white font-semibold text-lg shadow-lg transition-all"
+                          style={{ backgroundColor: block.accent }}
+                          aria-label={`${block.cta} - ${block.headline}`}
+                        >
+                          {block.cta}
+                        </m.button>
+                      </div>
+                    </div>
+                  </m.div>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 )
               ))}
             </AnimatePresence>
           </div>
+<<<<<<< HEAD
         </motion.div>
+=======
+        </m.div>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 
         {/* Navigation Controls */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-4">
           {/* Scroll Indicator */}
           <AnimatePresence>
             {showScrollIndicator && (
+<<<<<<< HEAD
               <motion.div
+=======
+              <m.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, y: [0, 10, 0] }}
                 exit={{ opacity: 0 }}
@@ -218,7 +302,11 @@ export default function HeroSection({ onLearnMore, onBookNow }: HeroSectionProps
                 className="text-[#2B0902]"
               >
                 <ChevronDown size={32} />
+<<<<<<< HEAD
               </motion.div>
+=======
+              </m.div>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             )}
           </AnimatePresence>
 

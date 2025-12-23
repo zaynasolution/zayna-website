@@ -2,7 +2,11 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useLanguage } from '../context/LanguageContext'
 
+<<<<<<< HEAD
 const LOGO_PATH = '/src/assets/logo-zayna-beauty.png'
+=======
+const LOGO_PATH = '/src/assets/logo.png'
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 
 export default function Header() {
   const { t, lang, setLang } = useLanguage()
@@ -28,9 +32,18 @@ export default function Header() {
   return (
     <header className={navClass} aria-label="Main header">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+<<<<<<< HEAD
         <Link to="/" className="flex items-center gap-2 font-serif font-bold text-2xl text-[#2B0902]" aria-label="Go to home">
           <img src={LOGO_PATH} alt="Zayna Logo" className="h-12 w-auto object-contain mix-blend-multiply" />
           <span>Zayna</span>
+=======
+        <Link to="/" className="flex items-center" aria-label="Go to home">
+          <img 
+            src={LOGO_PATH} 
+            alt="Zayna Logo" 
+            className="h-10 w-auto object-contain" 
+          />
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
         </Link>
         <nav className="hidden md:flex gap-8 items-center" aria-label="Primary">
           <NavLink 

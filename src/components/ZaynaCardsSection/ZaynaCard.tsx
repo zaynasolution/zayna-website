@@ -20,7 +20,11 @@ export default function ZaynaCard({ title, content, imagePath, delay = 0 }: Zayn
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       onTap={() => setIsHovered(true)} // Touch feedback
+<<<<<<< HEAD
       className="group relative h-full flex justify-center"
+=======
+      className="zayna-card group relative h-full flex justify-center"
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
     >
       <div className="relative w-full max-w-[320px] rounded-[20px] overflow-hidden flex flex-col items-center justify-center bg-[#FFF0ED]">
         

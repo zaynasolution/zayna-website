@@ -74,11 +74,16 @@ const en = {
   testimonial_3_location: 'Jeddah, Dec 2023',
 
   // Contact Form
+<<<<<<< HEAD
   contact_title: 'Ready to Gain new clients',
+=======
+  contact_title: 'Ready to Transform Your Salon?',
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   contact_subtitle: 'Join the Zayna network today and start growing your business. Fill out the form below and our team will get in touch with you shortly.',
   form_salon_name: 'Salon Name',
   form_salon_name_placeholder: 'Enter your salon name',
   form_phone: 'Phone Number',
+<<<<<<< HEAD
   form_location: 'Location (Riyadh Area)',
   form_location_placeholder: 'Select Area',
   form_multiple_branches: 'Do you have multiple branches?',
@@ -86,6 +91,14 @@ const en = {
   form_no: 'No',
   form_message: 'Any Message',
   form_message_placeholder: 'Tell us about your salon\'s needs...',
+=======
+  form_city: 'City',
+  form_city_placeholder: 'Select your city',
+  form_email: 'Email',
+  form_message: 'How Can We Help You?',
+  form_message_placeholder: 'Tell us about your salon\'s needs...',
+  form_preferred_contact: 'Preferred Contact Method',
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   form_submit: 'Submit Request',
   form_phone_error: 'Please enter a valid Saudi mobile number (+966 5X XXX XXXX)',
   
@@ -159,8 +172,13 @@ const en = {
   zayna_preview_desc: 'A glimpse into the simplest beauty booking experience in Saudi Arabia',
 
   zayna_cta_title: 'Ready to Transform Your Beauty Routine?',
+<<<<<<< HEAD
   zayna_cta_desc_1: 'Download Zayna Today and Get Your First Booking',
   zayna_cta_desc_2: '',
+=======
+  zayna_cta_desc_1: 'Download Zayna Today and Get Your First Booking at',
+  zayna_cta_desc_2: '20%!',
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   zayna_scan_text: 'Scan to Download',
   zayna_qr_code: 'QR Code',
 
@@ -256,7 +274,11 @@ const en = {
   // Why Us Page
   why_hero_title: 'Why Thousands Choose Zayna Across Saudi Arabia',
   why_hero_desc: 'Discover the unique advantages that make Zayna the trusted partner for beauty salon booking',
+<<<<<<< HEAD
   why_stat_salons: '500+ Salons',
+=======
+  why_stat_salons: '100+ Salons',
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   why_stat_users: '50,000+ Users',
   why_stat_satisfaction: '98% Satisfaction',
 

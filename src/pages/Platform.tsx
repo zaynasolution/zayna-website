@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+<<<<<<< HEAD
 import { 
   BarChart2, Settings, TrendingUp, MessageCircle, 
   Check, Crown, ShieldCheck, Search, Zap, 
@@ -6,13 +7,35 @@ import {
   ArrowRight
 } from 'lucide-react'
 import { PlatformMeta } from './meta'
+=======
+import {
+  BarChart2,
+  Settings,
+  TrendingUp,
+  MessageCircle,
+  Check,
+  Crown,
+  ShieldCheck,
+  Search,
+  Zap,
+  CreditCard,
+  Home,
+  Monitor,
+  Smartphone,
+  ArrowRight,
+} from 'lucide-react'
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 import Footer from '../components/Footer'
 import { useLanguage } from '../context/LanguageContext'
 
 // Animation variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
+<<<<<<< HEAD
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+=======
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 }
 
 const staggerContainer = {
@@ -20,9 +43,15 @@ const staggerContainer = {
   visible: {
     opacity: 1,
     transition: {
+<<<<<<< HEAD
       staggerChildren: 0.1
     }
   }
+=======
+      staggerChildren: 0.1,
+    },
+  },
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 }
 
 export default function Platform() {
@@ -39,8 +68,13 @@ export default function Platform() {
         t('platform_feat1_bullet1'),
         t('platform_feat1_bullet2'),
         t('platform_feat1_bullet3'),
+<<<<<<< HEAD
         t('platform_feat1_bullet4')
       ]
+=======
+        t('platform_feat1_bullet4'),
+      ],
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
     },
     {
       id: 2,
@@ -52,8 +86,13 @@ export default function Platform() {
         t('platform_feat2_bullet1'),
         t('platform_feat2_bullet2'),
         t('platform_feat2_bullet3'),
+<<<<<<< HEAD
         t('platform_feat2_bullet4')
       ]
+=======
+        t('platform_feat2_bullet4'),
+      ],
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
     },
     {
       id: 3,
@@ -65,8 +104,13 @@ export default function Platform() {
         t('platform_feat3_bullet1'),
         t('platform_feat3_bullet2'),
         t('platform_feat3_bullet3'),
+<<<<<<< HEAD
         t('platform_feat3_bullet4')
       ]
+=======
+        t('platform_feat3_bullet4'),
+      ],
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
     },
     {
       id: 4,
@@ -78,6 +122,7 @@ export default function Platform() {
         t('platform_feat4_bullet1'),
         t('platform_feat4_bullet2'),
         t('platform_feat4_bullet3'),
+<<<<<<< HEAD
         t('platform_feat4_bullet4')
       ]
     }
@@ -90,13 +135,55 @@ export default function Platform() {
     { icon: <TrendingUp className="w-8 h-8 text-[#9C89B8]" />, title: t('platform_usp4_title'), desc: t('platform_usp4_desc') },
     { icon: <Zap className="w-8 h-8 text-[#9C89B8]" />, title: t('platform_usp5_title'), desc: t('platform_usp5_desc') },
     { icon: <Monitor className="w-8 h-8 text-[#9C89B8]" />, title: t('platform_usp6_title'), desc: t('platform_usp6_desc') }
+=======
+        t('platform_feat4_bullet4'),
+      ],
+    },
+  ]
+
+  const usps = [
+    {
+      icon: <Crown className="w-8 h-8 text-[#9C89B8]" />,
+      title: t('platform_usp1_title'),
+      desc: t('platform_usp1_desc'),
+    },
+    {
+      icon: <ShieldCheck className="w-8 h-8 text-[#9C89B8]" />,
+      title: t('platform_usp2_title'),
+      desc: t('platform_usp2_desc'),
+    },
+    {
+      icon: <Search className="w-8 h-8 text-[#9C89B8]" />,
+      title: t('platform_usp3_title'),
+      desc: t('platform_usp3_desc'),
+    },
+    {
+      icon: <TrendingUp className="w-8 h-8 text-[#9C89B8]" />,
+      title: t('platform_usp4_title'),
+      desc: t('platform_usp4_desc'),
+    },
+    {
+      icon: <Zap className="w-8 h-8 text-[#9C89B8]" />,
+      title: t('platform_usp5_title'),
+      desc: t('platform_usp5_desc'),
+    },
+    {
+      icon: <Monitor className="w-8 h-8 text-[#9C89B8]" />,
+      title: t('platform_usp6_title'),
+      desc: t('platform_usp6_desc'),
+    },
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   ]
 
   const roadmap = [
     { quarter: 'Q3 2024', feature: t('platform_roadmap_q3_2024'), icon: <CreditCard size={20} /> },
     { quarter: 'Q4 2024', feature: t('platform_roadmap_q4_2024'), icon: <Crown size={20} /> },
     { quarter: 'Q1 2025', feature: t('platform_roadmap_q1_2025'), icon: <Home size={20} /> },
+<<<<<<< HEAD
     { quarter: 'Q2 2025', feature: t('platform_roadmap_q2_2025'), icon: <Smartphone size={20} /> }
+=======
+    { quarter: 'Q2 2025', feature: t('platform_roadmap_q2_2025'), icon: <Smartphone size={20} /> },
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   ]
 
   const testimonials = [
@@ -104,24 +191,40 @@ export default function Platform() {
       quote: t('platform_testimonial1_quote'),
       author: t('platform_testimonial1_author'),
       role: t('platform_testimonial1_role'),
+<<<<<<< HEAD
       metric: t('platform_testimonial1_metric')
+=======
+      metric: t('platform_testimonial1_metric'),
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
     },
     {
       quote: t('platform_testimonial2_quote'),
       author: t('platform_testimonial2_author'),
       role: t('platform_testimonial2_role'),
+<<<<<<< HEAD
       metric: t('platform_testimonial2_metric')
     }
+=======
+      metric: t('platform_testimonial2_metric'),
+    },
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   ]
 
   return (
     <div className="bg-[#FFF0ED] min-h-screen" dir={rtl ? 'rtl' : 'ltr'}>
+<<<<<<< HEAD
       <PlatformMeta />
       
       {/* 1. Hero Section */}
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-[#FFF0ED] via-[#FFF0ED] to-[#9C89B8]/20">
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <motion.h1 
+=======
+      {/* 1. Hero Section */}
+      <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-[#FFF0ED] via-[#FFF0ED] to-[#9C89B8]/20">
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <motion.h1
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -129,8 +232,13 @@ export default function Platform() {
           >
             {t('platform_hero_title')}
           </motion.h1>
+<<<<<<< HEAD
           
           <motion.p 
+=======
+
+          <motion.p
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -138,14 +246,25 @@ export default function Platform() {
           >
             {t('platform_hero_desc')}
           </motion.p>
+<<<<<<< HEAD
           
+=======
+
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
+<<<<<<< HEAD
             <button 
               onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+=======
+            <button
+              onClick={() =>
+                document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })
+              }
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
               className="bg-[#9C89B8] text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-[#8B7A9A] hover:scale-105 transition-all duration-300"
             >
               {t('platform_get_started')}
@@ -157,7 +276,11 @@ export default function Platform() {
       {/* 2. Platform Features Showcase */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
+<<<<<<< HEAD
           <motion.div 
+=======
+          <motion.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -165,7 +288,11 @@ export default function Platform() {
             className="grid grid-cols-1 md:grid-cols-2 gap-8"
           >
             {features.map((feature) => (
+<<<<<<< HEAD
               <motion.div 
+=======
+              <motion.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 key={feature.id}
                 variants={fadeInUp}
                 className="bg-white/80 backdrop-blur-md rounded-3xl p-8 border border-[#9C89B8]/20 hover:shadow-xl transition-shadow duration-300"
@@ -173,7 +300,13 @@ export default function Platform() {
                 <div className="w-12 h-12 bg-[#9C89B8]/10 rounded-2xl flex items-center justify-center mb-6">
                   {feature.icon}
                 </div>
+<<<<<<< HEAD
                 <h3 className="text-xl font-bold text-[#2B0902] mb-2 font-serif">{feature.subtitle}</h3>
+=======
+                <h3 className="text-xl font-bold text-[#2B0902] mb-2 font-serif">
+                  {feature.subtitle}
+                </h3>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 <p className="text-[#2B0902]/70 mb-6">{feature.description}</p>
                 <ul className="space-y-3">
                   {feature.bullets.map((bullet, i) => (
@@ -197,10 +330,17 @@ export default function Platform() {
               {t('platform_usp_title')}
             </h2>
           </div>
+<<<<<<< HEAD
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {usps.map((usp, index) => (
               <motion.div 
+=======
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {usps.map((usp, index) => (
+              <motion.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -231,10 +371,17 @@ export default function Platform() {
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute top-1/2 left-0 w-full h-1 bg-[#9C89B8]/20 -translate-y-1/2 hidden md:block" />
+<<<<<<< HEAD
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {roadmap.map((item, index) => (
                 <motion.div 
+=======
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              {roadmap.map((item, index) => (
+                <motion.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -245,9 +392,13 @@ export default function Platform() {
                   <span className="text-xs font-bold text-[#9C89B8] bg-[#9C89B8]/10 px-3 py-1 rounded-full mb-3">
                     {item.quarter}
                   </span>
+<<<<<<< HEAD
                   <div className="mb-3 text-[#2B0902]">
                     {item.icon}
                   </div>
+=======
+                  <div className="mb-3 text-[#2B0902]">{item.icon}</div>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                   <p className="font-semibold text-[#2B0902] text-sm">{item.feature}</p>
                 </motion.div>
               ))}
@@ -263,9 +414,13 @@ export default function Platform() {
             <h2 className="text-3xl md:text-5xl font-bold font-serif mb-4">
               {t('platform_pricing_title')}
             </h2>
+<<<<<<< HEAD
             <p className="text-xl text-white/80">
               {t('platform_pricing_subtitle')}
             </p>
+=======
+            <p className="text-xl text-white/80">{t('platform_pricing_subtitle')}</p>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
@@ -273,11 +428,23 @@ export default function Platform() {
               <h3 className="text-xl font-bold mb-2">{t('platform_tier_free')}</h3>
               <p className="text-white/70 text-sm mb-4">{t('platform_tier_free_desc')}</p>
               <ul className="space-y-2 text-sm text-white/80 mb-6">
+<<<<<<< HEAD
                 <li className="flex gap-2"><Check size={16} /> {t('platform_tier_free_feat1')}</li>
                 <li className="flex gap-2"><Check size={16} /> {t('platform_tier_free_feat2')}</li>
               </ul>
             </div>
             
+=======
+                <li className="flex gap-2">
+                  <Check size={16} /> {t('platform_tier_free_feat1')}
+                </li>
+                <li className="flex gap-2">
+                  <Check size={16} /> {t('platform_tier_free_feat2')}
+                </li>
+              </ul>
+            </div>
+
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             <div className="bg-gradient-to-br from-[#9C89B8] to-[#8B7A9A] rounded-2xl p-8 border border-white/20 transform md:-translate-y-4 shadow-2xl relative">
               <div className="absolute top-0 right-0 bg-[#F5AC73] text-[#2B0902] text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-xl left-0 right-auto rtl:right-auto rtl:left-0 rtl:rounded-tl-none rtl:rounded-tr-none rtl:rounded-br-xl rtl:rounded-bl-none">
                 {t('platform_most_popular')}
@@ -285,9 +452,21 @@ export default function Platform() {
               <h3 className="text-xl font-bold mb-2">{t('platform_tier_premium')}</h3>
               <p className="text-white/90 text-sm mb-4">{t('platform_tier_premium_desc')}</p>
               <ul className="space-y-2 text-sm text-white/90 mb-6">
+<<<<<<< HEAD
                 <li className="flex gap-2"><Check size={16} /> {t('platform_tier_premium_feat1')}</li>
                 <li className="flex gap-2"><Check size={16} /> {t('platform_tier_premium_feat2')}</li>
                 <li className="flex gap-2"><Check size={16} /> {t('platform_tier_premium_feat3')}</li>
+=======
+                <li className="flex gap-2">
+                  <Check size={16} /> {t('platform_tier_premium_feat1')}
+                </li>
+                <li className="flex gap-2">
+                  <Check size={16} /> {t('platform_tier_premium_feat2')}
+                </li>
+                <li className="flex gap-2">
+                  <Check size={16} /> {t('platform_tier_premium_feat3')}
+                </li>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
               </ul>
             </div>
 
@@ -295,15 +474,31 @@ export default function Platform() {
               <h3 className="text-xl font-bold mb-2">{t('platform_tier_enterprise')}</h3>
               <p className="text-white/70 text-sm mb-4">{t('platform_tier_enterprise_desc')}</p>
               <ul className="space-y-2 text-sm text-white/80 mb-6">
+<<<<<<< HEAD
                 <li className="flex gap-2"><Check size={16} /> {t('platform_tier_enterprise_feat1')}</li>
                 <li className="flex gap-2"><Check size={16} /> {t('platform_tier_enterprise_feat2')}</li>
+=======
+                <li className="flex gap-2">
+                  <Check size={16} /> {t('platform_tier_enterprise_feat1')}
+                </li>
+                <li className="flex gap-2">
+                  <Check size={16} /> {t('platform_tier_enterprise_feat2')}
+                </li>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
               </ul>
             </div>
           </div>
 
           <div className="text-center">
+<<<<<<< HEAD
             <button 
               onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+=======
+            <button
+              onClick={() =>
+                document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })
+              }
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
               className="bg-[#F5AC73] text-[#2B0902] px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-white transition-all duration-300 inline-flex items-center gap-2"
             >
               {t('platform_claim_dashboard')} <ArrowRight size={20} className="rtl:rotate-180" />
@@ -317,7 +512,11 @@ export default function Platform() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
+<<<<<<< HEAD
               <motion.div 
+=======
+              <motion.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 key={index}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}

@@ -74,6 +74,7 @@ const ar = {
   testimonial_3_location: 'جدة، ديسمبر 2023',
 
   // Contact Form
+<<<<<<< HEAD
   contact_title: 'مستعدة لعملاء جدد',
   contact_subtitle: 'انضمي لشبكة زينة اليوم وابدأي بتنمية مشروعك. عبي النموذج تحت وفريقنا بيتواصل معك .',
   form_salon_name: 'اسم الصالون',
@@ -86,6 +87,19 @@ const ar = {
   form_no: 'لا',
   form_message: 'أي رسالة',
   form_message_placeholder: 'خبرينا عن احتياجات صالونك...',
+=======
+  contact_title: 'جاهزة تطورين صالونك؟',
+  contact_subtitle: 'انضمي لشبكة زينة اليوم وابدأي بتنمية مشروعك. عبي النموذج تحت وفريقنا بيتواصل معك قريب.',
+  form_salon_name: 'اسم الصالون',
+  form_salon_name_placeholder: 'أدخلي اسم الصالون الخاص بك',
+  form_phone: 'رقم الجوال',
+  form_city: 'المدينة',
+  form_city_placeholder: 'اختاري مدينتك',
+  form_email: 'البريد الإلكتروني',
+  form_message: 'كيف نقدر نساعدك؟',
+  form_message_placeholder: 'خبرينا عن احتياجات صالونك...',
+  form_preferred_contact: 'وسيلة التواصل المفضلة',
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   form_submit: 'إرسال الطلب',
   form_phone_error: 'الرجاء إدخال رقم جوال سعودي صحيح (+966 5X XXX XXXX)',
   
@@ -159,8 +173,13 @@ const ar = {
   zayna_preview_desc: 'لمحة عن أبسط تجربة حجز تجميل في السعودية',
 
   zayna_cta_title: 'جاهزة تغيرين روتينك الجمالي؟',
+<<<<<<< HEAD
   zayna_cta_desc_1: 'حملي زينة اليوم واحصل على حجزك الأول',
   zayna_cta_desc_2: '',
+=======
+  zayna_cta_desc_1: 'حملي زينة اليوم واحصل على حجزك الأول بخصم',
+  zayna_cta_desc_2: '20%!',
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   zayna_scan_text: 'امسحي للتحميل',
   zayna_qr_code: 'رمز QR',
 

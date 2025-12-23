@@ -4,7 +4,11 @@ import { useLanguage } from '../../context/LanguageContext'
 import GlowingCircles from '../GlowingCircles/GlowingCircles'
 
 // Image paths - assumes assets are in src/assets/
+<<<<<<< HEAD
 const LOGO_PATH = '/src/assets/logo-zayna-beauty.png'
+=======
+const LOGO_PATH = '/src/assets/logo.png'
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 const CALENDAR_ICON = '/src/assets/calender-emoji.png'
 const LOCATION_ICON = '/src/assets/location.gif'
 const GIFT_ICON = '/src/assets/woman-gift.gif'

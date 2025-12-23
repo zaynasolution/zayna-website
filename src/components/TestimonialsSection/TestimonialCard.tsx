@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import { motion } from 'framer-motion'
+=======
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 import { useLanguage } from '../../context/LanguageContext'
 
 interface TestimonialCardProps {

@@ -1,13 +1,30 @@
 import { motion } from 'framer-motion'
+<<<<<<< HEAD
 import { 
   ShieldCheck, Heart, Zap, Check, Star, Users, 
   Award, Globe, Smile, Lock, Clock, ThumbsUp
 } from 'lucide-react'
 import { WhyMeta } from './meta'
+=======
+import {
+  ShieldCheck,
+  Heart,
+  Zap,
+  Check,
+  Star,
+  Users,
+  Award,
+  Globe,
+  Smile,
+  Lock,
+  Clock,
+} from 'lucide-react'
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 import Footer from '../components/Footer'
 import founderImage from '../assets/founder.jpg'
 import { useLanguage } from '../context/LanguageContext'
 
+<<<<<<< HEAD
 // Animation variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -24,6 +41,8 @@ const staggerContainer = {
   }
 }
 
+=======
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 export default function WhyUs() {
   const { t, rtl } = useLanguage()
 
@@ -37,8 +56,13 @@ export default function WhyUs() {
         t('why_value1_feat1'),
         t('why_value1_feat2'),
         t('why_value1_feat3'),
+<<<<<<< HEAD
         t('why_value1_feat4')
       ]
+=======
+        t('why_value1_feat4'),
+      ],
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
     },
     {
       icon: <Heart className="w-10 h-10 text-[#8B5A2B]" />,
@@ -49,8 +73,13 @@ export default function WhyUs() {
         t('why_value2_feat1'),
         t('why_value2_feat2'),
         t('why_value2_feat3'),
+<<<<<<< HEAD
         t('why_value2_feat4')
       ]
+=======
+        t('why_value2_feat4'),
+      ],
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
     },
     {
       icon: <Zap className="w-10 h-10 text-[#8B5A2B]" />,
@@ -61,9 +90,15 @@ export default function WhyUs() {
         t('why_value3_feat1'),
         t('why_value3_feat2'),
         t('why_value3_feat3'),
+<<<<<<< HEAD
         t('why_value3_feat4')
       ]
     }
+=======
+        t('why_value3_feat4'),
+      ],
+    },
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   ]
 
   const comparison = [
@@ -74,7 +109,11 @@ export default function WhyUs() {
     { feature: t('why_comp_feat5'), traditional: false, other: false, zayna: true },
     { feature: t('why_comp_feat6'), traditional: false, other: true, zayna: true },
     { feature: t('why_comp_feat7'), traditional: false, other: false, zayna: true },
+<<<<<<< HEAD
     { feature: t('why_comp_feat8'), traditional: true, other: false, zayna: true }
+=======
+    { feature: t('why_comp_feat8'), traditional: true, other: false, zayna: true },
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   ]
 
   const testimonials = {
@@ -82,36 +121,62 @@ export default function WhyUs() {
       {
         text: t('why_test_cust1_text'),
         author: t('why_test_cust1_author'),
+<<<<<<< HEAD
         location: t('why_test_cust1_loc')
+=======
+        location: t('why_test_cust1_loc'),
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
       },
       {
         text: t('why_test_cust2_text'),
         author: t('why_test_cust2_author'),
+<<<<<<< HEAD
         location: t('why_test_cust2_loc')
       }
+=======
+        location: t('why_test_cust2_loc'),
+      },
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
     ],
     owners: [
       {
         text: t('why_test_owner1_text'),
         author: t('why_test_owner1_author'),
+<<<<<<< HEAD
         location: t('why_test_owner1_loc')
+=======
+        location: t('why_test_owner1_loc'),
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
       },
       {
         text: t('why_test_owner2_text'),
         author: t('why_test_owner2_author'),
+<<<<<<< HEAD
         location: t('why_test_owner2_loc')
       }
     ]
+=======
+        location: t('why_test_owner2_loc'),
+      },
+    ],
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
   }
 
   return (
     <div className="bg-[#FFF0ED] min-h-screen" dir={rtl ? 'rtl' : 'ltr'}>
+<<<<<<< HEAD
       <WhyMeta />
       
       {/* 1. Hero Section */}
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-[#FFF0ED] to-[#EFC7C2]/20">
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <motion.h1 
+=======
+      {/* 1. Hero Section */}
+      <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-[#FFF0ED] to-[#EFC7C2]/20">
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <motion.h1
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -119,8 +184,13 @@ export default function WhyUs() {
           >
             {t('why_hero_title')}
           </motion.h1>
+<<<<<<< HEAD
           
           <motion.p 
+=======
+
+          <motion.p
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -128,18 +198,37 @@ export default function WhyUs() {
           >
             {t('why_hero_desc')}
           </motion.p>
+<<<<<<< HEAD
           
           <motion.div 
+=======
+
+          <motion.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-wrap justify-center gap-4 md:gap-8 text-[#8B5A2B] font-semibold"
           >
+<<<<<<< HEAD
             <span className="flex items-center gap-2"><Award size={20} /> {t('why_stat_salons')}</span>
             <span className="hidden md:inline">•</span>
             <span className="flex items-center gap-2"><Users size={20} /> {t('why_stat_users')}</span>
             <span className="hidden md:inline">•</span>
             <span className="flex items-center gap-2"><Smile size={20} /> {t('why_stat_satisfaction')}</span>
+=======
+            <span className="flex items-center gap-2">
+              <Award size={20} /> {t('why_stat_salons')}
+            </span>
+            <span className="hidden md:inline">•</span>
+            <span className="flex items-center gap-2">
+              <Users size={20} /> {t('why_stat_users')}
+            </span>
+            <span className="hidden md:inline">•</span>
+            <span className="flex items-center gap-2">
+              <Smile size={20} /> {t('why_stat_satisfaction')}
+            </span>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
           </motion.div>
         </div>
       </section>
@@ -149,7 +238,11 @@ export default function WhyUs() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
+<<<<<<< HEAD
               <motion.div 
+=======
+              <motion.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -191,14 +284,30 @@ export default function WhyUs() {
             <table className="w-full min-w-[600px]">
               <thead>
                 <tr className="border-b border-[#2B0902]/10">
+<<<<<<< HEAD
                   <th className="py-4 text-left rtl:text-right text-[#2B0902] font-serif text-lg px-4">{t('why_comp_header_feature')}</th>
                   <th className="py-4 text-center text-[#2B0902]/60 font-medium">{t('why_comp_header_traditional')}</th>
                   <th className="py-4 text-center text-[#2B0902]/60 font-medium">{t('why_comp_header_other')}</th>
                   <th className="py-4 text-center text-[#8B5A2B] font-bold text-xl bg-[#FFF0ED]/50 rounded-t-xl">{t('why_comp_header_zayna')}</th>
+=======
+                  <th className="py-4 text-left rtl:text-right text-[#2B0902] font-serif text-lg px-4">
+                    {t('why_comp_header_feature')}
+                  </th>
+                  <th className="py-4 text-center text-[#2B0902]/60 font-medium">
+                    {t('why_comp_header_traditional')}
+                  </th>
+                  <th className="py-4 text-center text-[#2B0902]/60 font-medium">
+                    {t('why_comp_header_other')}
+                  </th>
+                  <th className="py-4 text-center text-[#8B5A2B] font-bold text-xl bg-[#FFF0ED]/50 rounded-t-xl">
+                    {t('why_comp_header_zayna')}
+                  </th>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 </tr>
               </thead>
               <tbody>
                 {comparison.map((row, index) => (
+<<<<<<< HEAD
                   <tr key={index} className="border-b border-[#2B0902]/5 hover:bg-white/50 transition-colors">
                     <td className="py-4 text-[#2B0902] font-medium px-4">{row.feature}</td>
                     <td className="py-4 text-center">
@@ -206,6 +315,26 @@ export default function WhyUs() {
                     </td>
                     <td className="py-4 text-center">
                       {row.other ? <Check className="mx-auto text-gray-400" size={20} /> : <span className="text-gray-300">-</span>}
+=======
+                  <tr
+                    key={index}
+                    className="border-b border-[#2B0902]/5 hover:bg-white/50 transition-colors"
+                  >
+                    <td className="py-4 text-[#2B0902] font-medium px-4">{row.feature}</td>
+                    <td className="py-4 text-center">
+                      {row.traditional ? (
+                        <Check className="mx-auto text-gray-400" size={20} />
+                      ) : (
+                        <span className="text-gray-300">-</span>
+                      )}
+                    </td>
+                    <td className="py-4 text-center">
+                      {row.other ? (
+                        <Check className="mx-auto text-gray-400" size={20} />
+                      ) : (
+                        <span className="text-gray-300">-</span>
+                      )}
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                     </td>
                     <td className="py-4 text-center bg-[#FFF0ED]/30">
                       <div className="bg-[#F5AC73] rounded-full p-1 w-fit mx-auto">
@@ -231,7 +360,11 @@ export default function WhyUs() {
               </h3>
               <div className="space-y-6">
                 {testimonials.customers.map((story, i) => (
+<<<<<<< HEAD
                   <motion.div 
+=======
+                  <motion.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                     key={i}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -239,7 +372,13 @@ export default function WhyUs() {
                     className="bg-white p-6 rounded-2xl shadow-sm border border-[#F5AC73]/20"
                   >
                     <div className="flex gap-1 mb-3">
+<<<<<<< HEAD
                       {[...Array(5)].map((_, j) => <Star key={j} size={16} className="text-[#F5AC73] fill-current" />)}
+=======
+                      {[...Array(5)].map((_, j) => (
+                        <Star key={j} size={16} className="text-[#F5AC73] fill-current" />
+                      ))}
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                     </div>
                     <p className="text-[#2B0902]/80 italic mb-4">"{story.text}"</p>
                     <div className="text-sm">
@@ -259,7 +398,11 @@ export default function WhyUs() {
               </h3>
               <div className="space-y-6">
                 {testimonials.owners.map((story, i) => (
+<<<<<<< HEAD
                   <motion.div 
+=======
+                  <motion.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                     key={i}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -267,7 +410,13 @@ export default function WhyUs() {
                     className="bg-white p-6 rounded-2xl shadow-sm border border-[#8B5A2B]/20"
                   >
                     <div className="flex gap-1 mb-3">
+<<<<<<< HEAD
                       {[...Array(5)].map((_, j) => <Star key={j} size={16} className="text-[#8B5A2B] fill-current" />)}
+=======
+                      {[...Array(5)].map((_, j) => (
+                        <Star key={j} size={16} className="text-[#8B5A2B] fill-current" />
+                      ))}
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                     </div>
                     <p className="text-[#2B0902]/80 italic mb-4">"{story.text}"</p>
                     <div className="text-sm">
@@ -295,16 +444,38 @@ export default function WhyUs() {
             <h2 className="text-3xl md:text-4xl font-bold font-serif text-[#2B0902] mb-4">
               {t('why_awards_title')}
             </h2>
+<<<<<<< HEAD
             <p className="text-[#2B0902]/70 max-w-2xl mx-auto">
               {t('why_awards_desc')}
             </p>
+=======
+            <p className="text-[#2B0902]/70 max-w-2xl mx-auto">{t('why_awards_desc')}</p>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
+<<<<<<< HEAD
               { title: t('why_award1_title'), org: t('why_award1_org'), icon: <Award className="w-12 h-12 text-[#F5AC73]" /> },
               { title: t('why_award2_title'), org: t('why_award2_org'), icon: <Star className="w-12 h-12 text-[#F5AC73]" /> },
               { title: t('why_award3_title'), org: t('why_award3_org'), icon: <Heart className="w-12 h-12 text-[#F5AC73]" /> }
+=======
+              {
+                title: t('why_award1_title'),
+                org: t('why_award1_org'),
+                icon: <Award className="w-12 h-12 text-[#F5AC73]" />,
+              },
+              {
+                title: t('why_award2_title'),
+                org: t('why_award2_org'),
+                icon: <Star className="w-12 h-12 text-[#F5AC73]" />,
+              },
+              {
+                title: t('why_award3_title'),
+                org: t('why_award3_org'),
+                icon: <Heart className="w-12 h-12 text-[#F5AC73]" />,
+              },
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             ].map((award, index) => (
               <motion.div
                 key={index}
@@ -314,9 +485,13 @@ export default function WhyUs() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white p-8 rounded-2xl shadow-sm border border-[#F5AC73]/20 flex flex-col items-center"
               >
+<<<<<<< HEAD
                 <div className="bg-[#FFF0ED] p-4 rounded-full mb-6">
                   {award.icon}
                 </div>
+=======
+                <div className="bg-[#FFF0ED] p-4 rounded-full mb-6">{award.icon}</div>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 <h3 className="text-xl font-bold text-[#2B0902] mb-2">{award.title}</h3>
                 <p className="text-[#8B5A2B] font-medium">{award.org}</p>
               </motion.div>
@@ -346,7 +521,14 @@ export default function WhyUs() {
               <div className="flex items-center gap-4">
                 <div className="flex -space-x-4 rtl:space-x-reverse">
                   {[1, 2, 3].map((i) => (
+<<<<<<< HEAD
                     <div key={i} className="w-12 h-12 rounded-full bg-[#EFC7C2] border-2 border-white flex items-center justify-center text-[#2B0902] font-bold text-xs">
+=======
+                    <div
+                      key={i}
+                      className="w-12 h-12 rounded-full bg-[#EFC7C2] border-2 border-white flex items-center justify-center text-[#2B0902] font-bold text-xs"
+                    >
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                       Team
                     </div>
                   ))}
@@ -354,7 +536,11 @@ export default function WhyUs() {
                 <span className="text-[#8B5A2B] font-medium">{t('why_team_label')}</span>
               </div>
             </motion.div>
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -362,9 +548,15 @@ export default function WhyUs() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-[#FFF0ED] rounded-[40px] overflow-hidden relative z-10 border-4 border-white shadow-xl">
+<<<<<<< HEAD
                 <img 
                   src={founderImage} 
                   alt="Zayna Founder" 
+=======
+                <img
+                  src={founderImage}
+                  alt="Zayna Founder"
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -384,9 +576,15 @@ export default function WhyUs() {
               { icon: <ShieldCheck size={32} />, text: t('why_commit_item1') },
               { icon: <Clock size={32} />, text: t('why_commit_item2') },
               { icon: <Lock size={32} />, text: t('why_commit_item3') },
+<<<<<<< HEAD
               { icon: <Globe size={32} />, text: t('why_commit_item4') }
             ].map((item, i) => (
               <motion.div 
+=======
+              { icon: <Globe size={32} />, text: t('why_commit_item4') },
+            ].map((item, i) => (
+              <motion.div
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -394,9 +592,13 @@ export default function WhyUs() {
                 transition={{ delay: i * 0.1 }}
                 className="flex flex-col items-center gap-3 opacity-80 hover:opacity-100 transition-opacity"
               >
+<<<<<<< HEAD
                 <div className="p-4 bg-white/10 rounded-full backdrop-blur-sm">
                   {item.icon}
                 </div>
+=======
+                <div className="p-4 bg-white/10 rounded-full backdrop-blur-sm">{item.icon}</div>
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
                 <span className="font-medium">{item.text}</span>
               </motion.div>
             ))}
@@ -411,14 +613,28 @@ export default function WhyUs() {
             {t('why_cta_title')}
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+<<<<<<< HEAD
             <button 
               onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
+=======
+            <button
+              onClick={() =>
+                document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })
+              }
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
               className="px-8 py-4 bg-[#F5AC73] text-[#2B0902] rounded-full font-bold text-lg shadow-lg hover:bg-[#EFC7C2] transition-colors"
             >
               {t('why_cta_btn_book')}
             </button>
+<<<<<<< HEAD
             <button 
               onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+=======
+            <button
+              onClick={() =>
+                document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })
+              }
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
               className="px-8 py-4 bg-white text-[#8B5A2B] border-2 border-[#8B5A2B] rounded-full font-bold text-lg hover:bg-[#FFF0ED] transition-colors"
             >
               {t('why_cta_btn_list')}
@@ -434,6 +650,7 @@ export default function WhyUs() {
 
 function StoreIcon({ className }: { className?: string }) {
   return (
+<<<<<<< HEAD
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
       width="24" 
@@ -451,6 +668,25 @@ function StoreIcon({ className }: { className?: string }) {
       <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/>
       <path d="M2 7h20"/>
       <path d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7"/>
+=======
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+      <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+      <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+      <path d="M2 7h20" />
+      <path d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7" />
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
     </svg>
   )
 }

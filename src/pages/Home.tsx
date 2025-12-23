@@ -1,5 +1,8 @@
 import { BusinessJsonLD } from '../utils/structuredData'
+<<<<<<< HEAD
 import { HomeMeta } from './meta'
+=======
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
 import HeroSection from '../components/HeroSection'
 import ZaynaCardsSection from '../components/ZaynaCardsSection'
 import JoinAppSection from '../components/JoinAppSection'
@@ -27,6 +30,7 @@ export default function Home() {
 
   return (
     <main id="main">
+<<<<<<< HEAD
       <HomeMeta />
       <BusinessJsonLD name="Zayna" url="https://zayna.example.com" />
       <ScrollProgressLoader />
@@ -42,6 +46,22 @@ export default function Home() {
         <DashboardSection />
       </div>
       
+=======
+      <BusinessJsonLD name="Zayna" url="https://zayna.example.com" />
+      <ScrollProgressLoader />
+
+      <div id="hero-section">
+        <HeroSection onLearnMore={handleLearnMore} onBookNow={handleBookNow} />
+      </div>
+
+      <ZaynaCardsSection />
+      <JoinAppSection />
+
+      <div id="dashboard">
+        <DashboardSection />
+      </div>
+
+>>>>>>> f5e6d0fc18cdbec6d14ab87a8190ce7bb081bfe8
       <TestimonialsSection />
       <ContactForm />
       <Footer />
