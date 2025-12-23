@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #FFF0ED;
+  --color-text: #2B0902;
+  --color-secondary: #F5AC73;
+  --font-serif: "Times New Roman", Times, serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-text antialiased font-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.skip-link {
+  @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:bg-secondary focus:text-text focus:px-4 focus:py-2 focus:rounded;
+}
